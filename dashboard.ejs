@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Assignment for Quadiro Technologies</title>
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+  <p>Total number of cars: <%= carCount %></p>
+  <h2>Car List</h2>
+  <ul>
+    <% cars.forEach(car => { %>
+      <li><%= car.name %> - <%= car.manufacturingYear %> - $<%= car.price %></li>
+    <% }) %>
+  </ul>
+</body>
+</html>
